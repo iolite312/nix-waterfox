@@ -7,8 +7,8 @@
 
 (buildMozillaMach rec {
   pname = "waterfox";
-  version = "140.13.0";
-  packageVersion = "6.6.17";
+  version = "153.0";
+  packageVersion = "6.7.4";
   applicationName = "Waterfox";
   binaryName = "waterfox";
   branding = "waterfox/browser/branding";

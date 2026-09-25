@@ -4,18 +4,22 @@
 <h1 align="center">Nix Waterfox</h1>
 
 <p align="center">
-<a href="https://www.waterfox.com/download"><img src="https://img.shields.io/badge/version-6.6.17-blue" alt="version"/></a>
-<a href="https://github.com/Hythera/nix-waterfox/stargazers"><img src="https://img.shields.io/github/stars/Hythera/nix-waterfox" alt="stars"/>
+<a href="https://www.waterfox.com/download"><img src="https://img.shields.io/badge/version-6.7.4-blue" alt="version"/></a>
+<a href="https://github.com/iolite312/nix-waterfox/stargazers"><img src="https://img.shields.io/github/stars/iolite312/nix-waterfox" alt="stars"/>
 </p>
 
 <div align="center">
   <a href="https://www.waterfox.com">Waterfox</a>
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-  <a href="https://github.com/Hythera/nix-waterfox/issues/new">Issues</a>
+  <a href="https://github.com/iolite312/nix-waterfox/issues/new">Issues</a>
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
   <a href="https://www.waterfox.com/releases">Changelog</a>
   <br />
 </div>
+
+
+> [!Note]
+> All credits go to <a href="https://github.com/Hythera/nix-waterfox/">Hythera</a> creating this flake i'm just maintaining a fork for the waterfox-bin so i can have a updated browser.
 
 > [!Note]
 > This flake is experimental. While I will try to keep it updated, I can't garuantee just in time security updates until Waterfox gets adopted into **nixpkgs**.
@@ -34,7 +38,7 @@ You can test Waterfox on your system by running it in a **Nix-Shell**. It is rec
 
 ```bash
 # Run the Nix-Shell (requires the new experimental Nix command)
-nix shell github:Hythera/nix-waterfox#waterfox-bin
+nix shell github:iolite312/nix-waterfox#waterfox-bin
 
 # Start Waterfox
 waterfox
@@ -48,7 +52,7 @@ The second way is to install Waterfox on your NixOS system. While you can use th
 # flake.nix
 {
   inputs = {
-    waterfox.url = "github:Hythera/nix-waterfox";
+    waterfox.url = "github:iolite312/nix-waterfox";
     ...
   };
   outputs = {
