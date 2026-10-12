@@ -16,7 +16,6 @@
   pipewire,
   stdenv,
   wrapGAppsHook3,
-  ffmpeg,
 }:
 let
   pname = "waterfox-bin-unwrapped";
@@ -71,7 +70,6 @@ stdenv.mkDerivation {
   runtimeDependencies = [
     curl
     pciutils
-    ffmpeg
   ]
   ++ lib.optionals (!stdenv.hostPlatform.isDarwin) [
     libva.out
@@ -109,7 +107,7 @@ stdenv.mkDerivation {
   passthru = {
     inherit applicationName binaryName;
     libName = "waterfox-bin-${version}";
-    ffmpegSupport = true;
+    withFFmpeg = true;
     gssSupport = true;
     gtk3 = gtk3;
   };
