@@ -19,7 +19,7 @@
 }:
 let
   pname = "waterfox-bin-unwrapped";
-  version = "6.7.5";
+  version = "6.7.9";
 
   binaryName = "waterfox";
   mozillaPlatforms = {
